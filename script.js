@@ -123,5 +123,5 @@
 
 // 2.1 EXECUTION CONTEXT, HOISTING & SCOPE
 
-var nama = 'Sandhika';
+var nama = "Sandhika";
 console.log(nama);
