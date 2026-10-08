@@ -97,7 +97,7 @@
 // let sandhika = new Mahasiswa("Sandhika", 10);
 // let doddy = new Mahasiswa("Doddy", 20);
 
-let angka = 1;
+// let angka = 1;
 // console.log(angka);
 
 // 3. Constructor Function
@@ -120,3 +120,8 @@ let angka = 1;
 // let sandhika = new Mahasiswa('Sandhika', 10);
 
 // 4. Object.create
+
+// 2.1 EXECUTION CONTEXT, HOISTING & SCOPE
+
+var nama = 'Sandhika';
+console.log(nama);
