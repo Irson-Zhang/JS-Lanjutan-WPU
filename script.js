@@ -135,14 +135,14 @@
 
 // execution phase
 
-console.log(sayHello());
+// console.log(sayHello());
 
-var nama = "Sandhika";
-var umur = 33;
+// var nama = "Sandhika";
+// var umur = 33;
 
-function sayHello() {
-  return `Halo, nama saya ${nama}, saya ${umur} tahun.`;
-}
+// function sayHello() {
+//   return `Halo, nama saya ${nama}, saya ${umur} tahun.`;
+// }
 
 // function membuat Local Execution Context
 // yang di dalamnya terdapat creation dan execution phase
@@ -160,17 +160,29 @@ function sayHello() {
 
 // console.log(cetakURL('doddyferdiansyah', '@erik'));
 
-function satu() {
-  var nama = "Sandhika";
-  console.log(nama);
-}
+// function satu() {
+//   var nama = "Sandhika";
+//   console.log(nama);
+// }
 
-function dua() {
-  console.log(nama);
-}
+// function dua() {
+//   console.log(nama);
+// }
 
-console.log(nama);
-var nama = "Erik";
-satu();
-dua("Doddy");
-console.log(nama);
+// console.log(nama);
+// var nama = "Erik";
+// satu();
+// dua("Doddy");
+// console.log(nama);
+
+
+function init() {
+  // let nama = 'Sandhika';
+  return function (nama) {
+    console.log(nama);
+  }
+  return tampilNama;
+}
+let panggilNama = init();
+panggilNama('Sandhika');
+panggilNama('Galih');
