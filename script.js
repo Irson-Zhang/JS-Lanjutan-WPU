@@ -175,14 +175,13 @@
 // dua("Doddy");
 // console.log(nama);
 
-
 function init() {
   // let nama = 'Sandhika';
   return function (nama) {
     console.log(nama);
-  }
+  };
   return tampilNama;
 }
 let panggilNama = init();
-panggilNama('Sandhika');
-panggilNama('Galih');
+panggilNama("Sandhika");
+panggilNama("Galih");
