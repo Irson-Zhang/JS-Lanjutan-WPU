@@ -150,12 +150,27 @@ function sayHello() {
 // arguments
 // hoisting
 
-var nama = 'Sandhika Galih';
-var username = '@sandhikagalih';
+// var nama = 'Sandhika Galih';
+// var username = '@sandhikagalih';
 
-function cetakURL() {
-  var instagramURL = 'http://instagram.com/';
-  return instagramURL + username;
+// function cetakURL() {
+//   var instagramURL = 'http://instagram.com/';
+//   return instagramURL + username;
+// }
+
+// console.log(cetakURL('doddyferdiansyah', '@erik'));
+
+function satu() {
+  var nama = "Sandhika";
+  console.log(nama);
 }
 
-console.log(cetakURL('doddyferdiansyah', '@erik'));
+function dua() {
+  console.log(nama);
+}
+
+console.log(nama);
+var nama = "Erik";
+satu();
+dua("Doddy");
+console.log(nama);
