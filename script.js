@@ -123,5 +123,39 @@
 
 // 2.1 EXECUTION CONTEXT, HOISTING & SCOPE
 
+// var nama = "Sandhika";
+// console.log(nama);
+
+// creation phase pada Global Context
+// nama var = undefined
+// nama function = fn()
+// hoisting
+// window = global object
+// this = window
+
+// execution phase
+
+console.log(sayHello());
+
 var nama = "Sandhika";
-console.log(nama);
+var umur = 33;
+
+function sayHello() {
+  return `Halo, nama saya ${nama}, saya ${umur} tahun.`;
+}
+
+// function membuat Local Execution Context
+// yang di dalamnya terdapat creation dan execution phase
+// window
+// arguments
+// hoisting
+
+var nama = 'Sandhika Galih';
+var username = '@sandhikagalih';
+
+function cetakURL() {
+  var instagramURL = 'http://instagram.com/';
+  return instagramURL + username;
+}
+
+console.log(cetakURL('doddyferdiansyah', '@erik'));
