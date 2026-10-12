@@ -2,3 +2,4 @@
 const tampilNama = function (nama) {
   return `Halo, ${nama}`;
 };
+console.log()
