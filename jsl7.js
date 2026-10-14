@@ -21,9 +21,18 @@
 // const tampilNama = () => `Hello World!`;
 // console.log(tampilNama());
 
+let mahasiswa = ["Sandhika Galih", "Doddy Ferdiansyah", "Erik"];
 
-let mahasiswa = ['Sandhika Galih', 'Doddy Ferdiansyah', 'Erik'];
+// let jumlahHuruf = mahasiswa.map(function (nama) {
+//   return nama.length;
+// });
+// console.log(jumlahHuruf);
 
-let jumlahHuruf = mahasiswa.map(function (nama) {
-    return nama.length;
-})
+// let jumlahHuruf = mahasiswa.map(nama => nama.length);
+// console.log(jumlahHuruf);
+
+let jumlahHuruf = mahasiswa.map((nama) => ({
+  nama,
+  jmlHuruf: nama.length,
+}));
+console.table(jumlahHuruf);
